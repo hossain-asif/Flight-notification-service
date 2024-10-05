@@ -1,3 +1,6 @@
+
+
+
 module.exports = {
-    BookingService: require('./booking-services')
+    EmailService : require('./email-service') 
 }

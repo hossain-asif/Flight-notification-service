@@ -1,12 +1,12 @@
 const express = require('express');
-const bookingRoutes = require('./booking-routes');
 
-const { InfoController } = require('../../controllers');
+
+const { InfoController, EmailController } = require('../../controllers');
 
 const router = express.Router();
 
-router.use('/booking', bookingRoutes);
-
+router.post('/tickets',
+    EmailController.create);
 
 
 
